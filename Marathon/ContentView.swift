@@ -28,17 +28,11 @@ struct ContentView: View {
                 Spacer(minLength: 40)
                         
                         VStack{
-                                    Text("Nearly there \(name)! You have \(daysLeft) days unitl your big run!")
+                            Text("Nearly there \(name)! You have \(daysLeft) days unitl your big run!").multilineTextAlignment(.center)
                         }
                         Spacer()
                         
-                        NavigationStack{
-                           
-                            List{
-                                NavigationLink ("Running plan") {
-                                    Text("Run plan").navigationTitle("Destination")}
-                            }
-                            }
+                   
                     }
                     .tabItem {
                         Image(systemName: "house")
@@ -46,18 +40,37 @@ struct ContentView: View {
                     }
                     
                     // Second Tab
-                    VStack {
-                        Text("Content for Second Tab")
-                    }
+            VStack {
+                Text("PLAN PAGE").fontWeight(.bold)
+                HStack{
+                    Text("In progress")
+                    Image(systemName: "exclamationmark.triangle")
+                }
+            }
                     .tabItem {
                         Image(systemName: "map")
                         Text("Plan")
                     }
                     
-                    // Third Tab
-                    VStack {
-                        Text("Content for Third Tab")
+                    // Settings Tab
+                   
+            VStack{
+                Text("Settings")
+                NavigationStack{
+                    
+                    List{
+                        NavigationLink ("Account settings") {
+                            HStack{
+                            }
+                            .navigationTitle("Account settings")}
+                        NavigationLink ("Account settings") {
+                            HStack{
+                            }
+                            .navigationTitle("Account settings")}
                     }
+                }
+            }
+            
                     .tabItem {
                         Image(systemName: "gear")
                         Text("Settings")

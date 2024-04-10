@@ -14,6 +14,7 @@
 		20DCA8CB2BC49F01008E12BD /* MarathonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DCA8CA2BC49F01008E12BD /* MarathonTests.swift */; };
 		20DCA8D52BC49F01008E12BD /* MarathonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DCA8D42BC49F01008E12BD /* MarathonUITests.swift */; };
 		20DCA8D72BC49F01008E12BD /* MarathonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DCA8D62BC49F01008E12BD /* MarathonUITestsLaunchTests.swift */; };
+		20DCA8E42BC74839008E12BD /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DCA8E32BC74839008E12BD /* Plan.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		20DCA8D02BC49F01008E12BD /* MarathonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarathonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20DCA8D42BC49F01008E12BD /* MarathonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarathonUITests.swift; sourceTree = "<group>"; };
 		20DCA8D62BC49F01008E12BD /* MarathonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarathonUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		20DCA8E32BC74839008E12BD /* Plan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				20DCA8B92BC49EFF008E12BD /* MarathonApp.swift */,
 				20DCA8BB2BC49EFF008E12BD /* ContentView.swift */,
+				20DCA8E32BC74839008E12BD /* Plan.swift */,
 				20DCA8BD2BC49F01008E12BD /* Assets.xcassets */,
 				20DCA8BF2BC49F01008E12BD /* Preview Content */,
 			);
@@ -259,6 +262,7 @@
 			files = (
 				20DCA8BC2BC49EFF008E12BD /* ContentView.swift in Sources */,
 				20DCA8BA2BC49EFF008E12BD /* MarathonApp.swift in Sources */,
+				20DCA8E42BC74839008E12BD /* Plan.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
