@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		20DCA8BA2BC49EFF008E12BD /* MarathonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DCA8B92BC49EFF008E12BD /* MarathonApp.swift */; };
-		20DCA8BC2BC49EFF008E12BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DCA8BB2BC49EFF008E12BD /* ContentView.swift */; };
+		20DCA8BC2BC49EFF008E12BD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DCA8BB2BC49EFF008E12BD /* HomeViewController.swift */; };
 		20DCA8BE2BC49F01008E12BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20DCA8BD2BC49F01008E12BD /* Assets.xcassets */; };
 		20DCA8C12BC49F01008E12BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20DCA8C02BC49F01008E12BD /* Preview Assets.xcassets */; };
 		20DCA8CB2BC49F01008E12BD /* MarathonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DCA8CA2BC49F01008E12BD /* MarathonTests.swift */; };
 		20DCA8D52BC49F01008E12BD /* MarathonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DCA8D42BC49F01008E12BD /* MarathonUITests.swift */; };
 		20DCA8D72BC49F01008E12BD /* MarathonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DCA8D62BC49F01008E12BD /* MarathonUITestsLaunchTests.swift */; };
-		20DCA8E42BC74839008E12BD /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DCA8E32BC74839008E12BD /* Plan.swift */; };
+		20DCA8E42BC74839008E12BD /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DCA8E32BC74839008E12BD /* PlanViewController.swift */; };
+		20DCA8E62BC908CB008E12BD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DCA8E52BC908CB008E12BD /* SettingsViewController.swift */; };
+		20DCA8E82BC909F3008E12BD /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DCA8E72BC909F3008E12BD /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,7 @@
 /* Begin PBXFileReference section */
 		20DCA8B62BC49EFF008E12BD /* Marathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20DCA8B92BC49EFF008E12BD /* MarathonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarathonApp.swift; sourceTree = "<group>"; };
-		20DCA8BB2BC49EFF008E12BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		20DCA8BB2BC49EFF008E12BD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		20DCA8BD2BC49F01008E12BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20DCA8C02BC49F01008E12BD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		20DCA8C62BC49F01008E12BD /* MarathonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarathonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,7 +47,9 @@
 		20DCA8D02BC49F01008E12BD /* MarathonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarathonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20DCA8D42BC49F01008E12BD /* MarathonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarathonUITests.swift; sourceTree = "<group>"; };
 		20DCA8D62BC49F01008E12BD /* MarathonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarathonUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		20DCA8E32BC74839008E12BD /* Plan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
+		20DCA8E32BC74839008E12BD /* PlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanViewController.swift; sourceTree = "<group>"; };
+		20DCA8E52BC908CB008E12BD /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		20DCA8E72BC909F3008E12BD /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +100,10 @@
 		20DCA8B82BC49EFF008E12BD /* Marathon */ = {
 			isa = PBXGroup;
 			children = (
-				20DCA8B92BC49EFF008E12BD /* MarathonApp.swift */,
-				20DCA8BB2BC49EFF008E12BD /* ContentView.swift */,
-				20DCA8E32BC74839008E12BD /* Plan.swift */,
+				20DCA8EF2BCE914C008E12BD /* Other */,
+				20DCA8EE2BCE9135008E12BD /* View Models */,
+				20DCA8EA2BCE9104008E12BD /* Views */,
+				20DCA8E92BCE8ECE008E12BD /* Controllers  */,
 				20DCA8BD2BC49F01008E12BD /* Assets.xcassets */,
 				20DCA8BF2BC49F01008E12BD /* Preview Content */,
 			);
@@ -128,6 +133,39 @@
 				20DCA8D62BC49F01008E12BD /* MarathonUITestsLaunchTests.swift */,
 			);
 			path = MarathonUITests;
+			sourceTree = "<group>";
+		};
+		20DCA8E92BCE8ECE008E12BD /* Controllers  */ = {
+			isa = PBXGroup;
+			children = (
+				20DCA8BB2BC49EFF008E12BD /* HomeViewController.swift */,
+				20DCA8E32BC74839008E12BD /* PlanViewController.swift */,
+				20DCA8E52BC908CB008E12BD /* SettingsViewController.swift */,
+				20DCA8E72BC909F3008E12BD /* TabBarController.swift */,
+			);
+			path = "Controllers ";
+			sourceTree = "<group>";
+		};
+		20DCA8EA2BCE9104008E12BD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				20DCA8B92BC49EFF008E12BD /* MarathonApp.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		20DCA8EE2BCE9135008E12BD /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		20DCA8EF2BCE914C008E12BD /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,9 +298,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20DCA8BC2BC49EFF008E12BD /* ContentView.swift in Sources */,
+				20DCA8BC2BC49EFF008E12BD /* HomeViewController.swift in Sources */,
 				20DCA8BA2BC49EFF008E12BD /* MarathonApp.swift in Sources */,
-				20DCA8E42BC74839008E12BD /* Plan.swift in Sources */,
+				20DCA8E42BC74839008E12BD /* PlanViewController.swift in Sources */,
+				20DCA8E82BC909F3008E12BD /* TabBarController.swift in Sources */,
+				20DCA8E62BC908CB008E12BD /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

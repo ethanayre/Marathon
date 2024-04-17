@@ -45,12 +45,11 @@ Divider()
             
             Text("Your run is on \(runDate.formatted(date: .long, time: .omitted)), you have \(timeDifference) until your run, have fun").fontWeight(.regular).multilineTextAlignment(.leading)
                
-                
 
          
             
         }.padding().contentMargins(20)
-        
+            
     }
 }
     

@@ -7,36 +7,57 @@
 
 import SwiftUI
 
-
 struct HomeViewController: View {
     
     @State var name = "Ethan"
     @State var daysLeft = 24
-   // @EnvironmentObject var timeDifference: timeDifference
+    @State private var progress = 0.6
+    //@EnvironmentObject var timeDifference: timeDifference
+
 
     var body: some View {
-        
-        
-        Spacer()
-        HStack {
-            Text("Marathon countdown")
-            Image(systemName: "map.fill")
-        }.font(.title).foregroundColor(.green)
-        
-Spacer(minLength: 40)
-        
-        VStack{
-                   Text("Nearly there \(name)! You have \(daysLeft) days unitl your big run!")
-        }
-        Spacer()
-        
-        
+        ZStack{
+            Color(.white).ignoresSafeArea()
 
-
+                    VStack {
+                        
+                           
+                            Text("Marathon countdown").font(.title).fontWeight(.semibold).multilineTextAlignment(.leading)
+                        HStack{
+                            Image(systemName: "figure.run")
+                                .foregroundColor(.red)
+                            
+                            Image(systemName: "flag.checkered")
+                                    
+                                }
+                        
+                        ProgressView(value: progress)
+                                                    .progressViewStyle(.linear).padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                                                    
+                                                
+                                                Text("Nearly there \(name)! You have \(daysLeft) days until your big run!")
+                                                    .font(.headline)
+                                                    .fontWeight(.regular)
+                                                    .multilineTextAlignment(.center)
+                                                    .padding(/*@START_MENU_TOKEN@*/.all, 20.0/*@END_MENU_TOKEN@*/)
+                        
+                        
+                        }
+                        .font(.title)
+                        .foregroundColor(.black)
+                        .padding(.all)
+                        
+                        
+                        
+                    
+                    }
+                    .padding(.all)
         }
+        
     }
 
 
+
 #Preview {
-    ContentView()
+    HomeViewController()
 }

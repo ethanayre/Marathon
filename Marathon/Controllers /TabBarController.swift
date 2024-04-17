@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct TabBarController: View {
     var body: some View {
         TabView {
             // Tab 1: Home
             NavigationView {
-                HomeViewController()
+                HomeViewController().navigationBarTitle("Home")
             }
             .tabItem {
                 Image(systemName: "house")
@@ -21,7 +21,7 @@ struct ContentView: View {
             
             // Tab 2: Favorites
             NavigationView {
-                PlanViewController() // Replace Text("Favorites View") with your custom FavoritesView
+                PlanViewController()
                     .navigationBarTitle("Plan")
             }
             .tabItem {
@@ -31,7 +31,7 @@ struct ContentView: View {
             
             // Tab 3: Profile
             NavigationView {
-                SettingsViewController() // Replace Text("Profile View") with your custom ProfileView
+                SettingsViewController()
                     .navigationBarTitle("Settings")
             }
             .tabItem {
@@ -42,30 +42,9 @@ struct ContentView: View {
     }
 }
 
-struct HomeView: View {
-    var body: some View {
-        // Your custom home view content here
-        Text("Welcome to the Home View!")
-    }
-}
-
-struct FavoritesView: View {
-    var body: some View {
-        // Your custom favorites view content here
-        Text("This is your Favorites View.")
-    }
-}
-
-struct ProfileView: View {
-    var body: some View {
-        // Your custom profile view content here
-        Text("View your Profile here.")
-    }
-}
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        TabBarController()
     }
 }
 
